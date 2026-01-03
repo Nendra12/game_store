@@ -44,3 +44,81 @@
   box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
               5px 5px 15px rgba(0, 0, 0, 0.35);
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .shopBagTable thead tr {
+    font-size: 1.1rem;
+  }
+
+  .itemCount {
+    font-size: 1.1rem;
+  }
+
+  .payment {
+    gap: 30px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .shopBagTable {
+    margin-top: 30px;
+    overflow-x: auto;
+  }
+
+  .shopBagTable thead tr {
+    font-size: 1rem;
+  }
+
+  .shopBagTable thead tr th {
+    padding: 10px 5px;
+  }
+
+  .itemCount {
+    font-size: 1rem;
+    margin: 8px;
+  }
+
+  .payment {
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1rem;
+    align-items: flex-start;
+  }
+
+  .payment a {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .shopBagTable {
+    margin-top: 20px;
+  }
+
+  .shopBagTable thead tr {
+    font-size: 0.85rem;
+  }
+
+  .shopBagTable thead tr th {
+    padding: 8px 3px;
+  }
+
+  .itemCount {
+    font-size: 0.9rem;
+    margin: 5px;
+  }
+
+  .payment {
+    font-size: 0.9rem;
+    gap: 12px;
+  }
+
+  .payment a {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    gap: 5px;
+  }
+}

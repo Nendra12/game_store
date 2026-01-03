@@ -55,6 +55,10 @@ function Main() {
     })
     setNavData(newNavbarData)
     handleSectionActive(target)
+    // Close sidebar on mobile after navigation
+    if(window.innerWidth <= 768) {
+      setActive(false)
+    }
   }
 
   const handleSectionActive = target => {
@@ -83,6 +87,7 @@ function Main() {
 
   return ( 
     <main>
+        <div className={`overlay ${active ? 'active' : ''}`} onClick={handleToggleActive}></div>
         <SideMenu active={active} navData={navData} navOnClick={handleNavClick}/>
         <div className={`banner ${active ? 'active': undefined}`}>
             <Header toggleActive={handleToggleActive} navData={navData} navOnClick={handleNavClick}/>

@@ -31,3 +31,55 @@
     text-align: center;
     color: #ffffff;
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .shopBagItem td,
+  .shopBagItem th {
+    font-size: 1.1rem;
+  }
+
+  .shopBagItem img {
+    width: 100px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .shopBagItem td,
+  .shopBagItem th {
+    font-size: 0.95rem;
+    padding: 8px 5px;
+  }
+
+  .shopBagItem a {
+    font-size: 1.3rem;
+  }
+
+  .shopBagItem img {
+    width: 80px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shopBagItem td,
+  .shopBagItem th {
+    font-size: 0.8rem;
+    padding: 6px 3px;
+  }
+
+  .shopBagItem a {
+    font-size: 1.1rem;
+  }
+
+  .shopBagItem img {
+    width: 60px;
+    height: 40px;
+  }
+
+  .boxEmpty {
+    margin-top: 50px;
+    font-size: 0.9rem;
+  }
+}

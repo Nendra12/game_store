@@ -114,3 +114,93 @@
     justify-content: center;
     align-items: center;
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .sideMenu {
+    width: 25%;
+    padding: 20px;
+  }
+
+  .sideMenu .logo {
+    font-size: 2.5em;
+  }
+
+  .sideMenu .nav li a {
+    font-size: 1em;
+    gap: 15px;
+    padding: 8px 15px;
+  }
+
+  .sideMenu .social {
+    bottom: 30px;
+    gap: 15px;
+  }
+
+  .sideMenu .social li a {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sideMenu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 70%;
+    height: 100vh;
+    z-index: 10000;
+    transition: left 0.5s;
+    border-radius: 0;
+  }
+
+  .sideMenu.active {
+    left: 0;
+    width: 70%;
+  }
+
+  .sideMenu .logo {
+    font-size: 2em;
+  }
+
+  .sideMenu .nav {
+    margin-top: 20px;
+  }
+
+  .sideMenu .nav li a {
+    font-size: 1.1em;
+  }
+
+  .sideMenu.active .brand,
+  .sideMenu.active .navName {
+    display: inline;
+  }
+
+  .sideMenu.active .nav li a {
+    font-size: 1.1em;
+  }
+
+  .sideMenu.active .social {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 480px) {
+  .sideMenu {
+    width: 80%;
+  }
+
+  .sideMenu.active {
+    width: 80%;
+  }
+
+  .sideMenu .logo {
+    font-size: 1.8em;
+    gap: 10px;
+  }
+
+  .sideMenu .nav li a {
+    font-size: 0.95em;
+    gap: 12px;
+  }
+}

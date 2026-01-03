@@ -6,3 +6,20 @@
 .gameCard .gameRating i {
     margin-left: 2px;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .gameCard .gameRating {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .gameCard .gameRating {
+    font-size: 1em;
+  }
+
+  .gameCard .gameRating i {
+    margin-left: 1px;
+  }
+}

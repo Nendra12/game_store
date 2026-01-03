@@ -149,3 +149,155 @@
   opacity: 1;
   transform: scale(1);
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .swiper {
+    width: 95%;
+  }
+
+  .swiper-slide {
+    width: 450px;
+    height: 300px;
+  }
+
+  .gameSlider .content {
+    right: 120px;
+    bottom: 15px;
+    width: 65%;
+  }
+
+  .gameSlider .content h2 {
+    font-size: 2.5rem;
+  }
+
+  .gameSlider .content p {
+    font-size: 0.75rem;
+  }
+
+  .gameSlider .content .buttons .orderBtn {
+    padding: 6px 15px;
+    font-size: 0.9rem;
+  }
+
+  .gameSlider .content .buttons .playBtn {
+    height: 45px;
+    width: 45px;
+    font-size: 2rem;
+  }
+
+  .swiper-slide .video iframe {
+    width: 80%;
+    height: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper {
+    width: 100%;
+  }
+
+  .swiper-slide {
+    width: 100%;
+    height: 280px;
+  }
+
+  .gameSlider .content {
+    right: 20px;
+    bottom: 20px;
+    width: 90%;
+  }
+
+  .gameSlider .content h2 {
+    font-size: 2rem;
+  }
+
+  .gameSlider .content p {
+    font-size: 0.7rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .gameSlider .content .buttons {
+    margin-top: 10px;
+    gap: 10px;
+  }
+
+  .gameSlider .content .buttons .orderBtn {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+
+  .gameSlider .content .buttons .playBtn {
+    height: 40px;
+    width: 40px;
+    font-size: 1.8rem;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    height: 40px;
+    width: 40px;
+  }
+
+  .swiper-slide .video iframe {
+    width: 100%;
+    height: 60%;
+    border-radius: 0 20px 0 20px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper-slide {
+    height: 240px;
+  }
+
+  .gameSlider .content {
+    right: 15px;
+    bottom: 15px;
+    width: 95%;
+  }
+
+  .gameSlider .content h2 {
+    font-size: 1.5rem;
+  }
+
+  .gameSlider .content p {
+    font-size: 0.65rem;
+    -webkit-line-clamp: 2;
+  }
+
+  .gameSlider .content .buttons {
+    margin-top: 8px;
+    gap: 8px;
+  }
+
+  .gameSlider .content .buttons .orderBtn {
+    padding: 5px 10px;
+    font-size: 0.75rem;
+  }
+
+  .gameSlider .content .buttons .playBtn {
+    height: 35px;
+    width: 35px;
+    font-size: 1.5rem;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    height: 35px;
+    width: 35px;
+  }
+
+  .swiper-button-prev svg,
+  .swiper-button-next svg {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .swiper-slide .video iframe {
+    height: 55%;
+  }
+}

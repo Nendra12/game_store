@@ -11,4 +11,35 @@ section.home .sectionTitle {
 
 .viewMore:hover {
     color: var(--second);
-}  
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  section.home .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .viewMore {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section.home .sectionTitle {
+    font-size: 1.3rem;
+  }
+
+  .viewMore {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  section.home .sectionTitle {
+    font-size: 1.1rem;
+  }
+
+  .viewMore {
+    font-size: 0.9rem;
+  }
+}

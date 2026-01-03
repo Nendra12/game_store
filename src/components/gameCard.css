@@ -113,3 +113,100 @@
 .gameCard .addBag:hover {
     background: var(--primary);
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .gameCard {
+    height: 360px;
+    padding: 20px 15px;
+  }
+
+  .gameCard .gameTitle {
+    font-size: 1.1rem;
+  }
+
+  .gameCard .like {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gameCard {
+    height: 340px;
+    padding: 18px 12px;
+    margin-bottom: 20px;
+  }
+
+  .gameCard img {
+    height: 45%;
+  }
+
+  .gameCard .gameTitle {
+    font-size: 1rem;
+  }
+
+  .gameCard .gameType {
+    font-size: 0.85rem;
+    padding: 4px 8px;
+  }
+
+  .gameCard .discount {
+    font-size: 1rem;
+  }
+
+  .gameCard .prevPrice {
+    font-size: 0.9rem;
+  }
+
+  .gameCard .currentPrice {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gameCard {
+    height: 320px;
+    padding: 15px 10px;
+    margin-bottom: 15px;
+  }
+
+  .gameCard img {
+    height: 45%;
+  }
+
+  .gameCard .like {
+    width: 32px;
+    height: 32px;
+    font-size: 0.9rem;
+  }
+
+  .gameCard .gameTitle {
+    font-size: 0.95rem;
+    margin-top: 3px;
+  }
+
+  .gameCard .gameType {
+    font-size: 0.75rem;
+    padding: 3px 6px;
+  }
+
+  .gameCard .discount {
+    font-size: 0.9rem;
+    padding: 1px 4px;
+  }
+
+  .gameCard .prevPrice {
+    font-size: 0.8rem;
+  }
+
+  .gameCard .currentPrice {
+    font-size: 1rem;
+  }
+
+  .gameCard .addBag {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+}
